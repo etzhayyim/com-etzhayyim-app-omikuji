@@ -15,7 +15,7 @@ moved, not rewritten:
 
 | Then | Now |
 |---|---|
-| `svelte/src/routes/+page.svelte` (the status page) | [`cljs/src/omikuji/app.cljs`](appview/omikuji-mcp-component/cljs/src/omikuji/app.cljs) — same fields, faithfully ported |
+| `svelte/src/routes/+page.svelte` (the status page) | [`cljs/src/omikuji/app.cljs`](appview/omikuji-mcp-component/cljs/src/omikuji/app.cljk) — same fields, faithfully ported |
 | `svelte/src/routes/xrpc/[...path]/+server.ts` (the file that actually deployed, per `wrangler.jsonc`'s old `main`) | [`src/xrpc-dispatcher.ts`](appview/omikuji-mcp-component/src/xrpc-dispatcher.ts) — moved byte-for-byte, only a provenance header comment added |
 | `wrangler.jsonc` `main: svelte/.svelte-kit/cloudflare/_worker.js` | `main` dropped entirely |
 | `wrangler.jsonc` `assets.directory: ./svelte/.svelte-kit/cloudflare/client` | `assets.directory: ./cljs/public` |
